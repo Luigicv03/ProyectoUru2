@@ -55,19 +55,24 @@
                           <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="textidusuario" min="-2" pref="201" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btnbuscar" min="-2" pref="91" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="textsexo" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                           <Component id="texttrabajo" min="-2" pref="150" max="-2" attributes="0"/>
                           <Component id="textestadocivil" min="-2" pref="150" max="-2" attributes="0"/>
                           <Component id="textpais" min="-2" pref="150" max="-2" attributes="0"/>
                           <Component id="textapellido" min="-2" pref="150" max="-2" attributes="0"/>
                           <Component id="textnombre" min="-2" pref="150" max="-2" attributes="0"/>
                           <Component id="textid" min="-2" pref="150" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="textsexo" min="-2" pref="150" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnchat" min="-2" pref="73" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
@@ -125,8 +130,9 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="textsexo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnchat" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnregreso1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnactualizar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -154,8 +160,14 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="textid">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textidActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="textnombre">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textnombreActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="textapellido">
     </Component>
@@ -229,6 +241,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btneliminarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnchat">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Chat"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnchatActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
